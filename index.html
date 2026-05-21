@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<meta name="google-site-verification" content="uKEuz_AJrF1GHXTj-HY41kWrkDKaBaGKpc2aZ3v87rw" />-->
     <meta name="google-site-verification" content="xyHZ4PZmgMwUw0b41l3FVxYKumDyHXYxG29iRgWmLpQ" />
+    <!--<meta name="google-site-verification" content="uKEuz_AJrF1GHXTj-HY41kWrkDKaBaGKpc2aZ3v87rw" />-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -16,15 +16,6 @@
     <meta name="keywords" content="Desarrollo Web, páginas web Reforma, Chiapas, diseñador web, freelancer, Sitios Web Profesionales">
     <meta name="robots" content="index, follow">
 
-    <!-- Google tag (gtag.js) 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LM2D3RQTCM"></script>
-            <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-LM2D3RQTCM');
-            </script>-->
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZ2ZEHZG52"></script>
           <script>
@@ -33,6 +24,15 @@
           gtag('js', new Date());
           gtag('config', 'G-ZZ2ZEHZG52');
     </script>
+
+    <!-- Google tag (gtag.js) -->
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-LM2D3RQTCM"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LM2D3RQTCM');
+            </script>-->
 
   </head>
 
@@ -119,6 +119,34 @@
       </ul>
 
       <hr class="separador">
+
+
+<div class="contador-seccion">
+    <h2 class="subtitulo">Mi impacto en números</h2>
+    <div class="contador-grid">
+        <div class="contador-item">
+            <div class="contador-numero" id="proyectosCont">0</div>
+            <div class="contador-label">Proyectos web</div>
+        </div>
+        <div class="contador-item">
+            <div class="contador-numero" id="clientesCont">0</div>
+            <div class="contador-label">Clientes felices</div>
+        </div>
+        <div class="contador-item">
+            <div class="contador-numero" id="experienciaCont">0</div>
+            <div class="contador-label">Años de experiencia</div>
+        </div>
+    </div>
+</div>
+
+
+    <hr class="separador">
+
+
+
+
+
+
 
       <h2 id="servicios" class="subtitulo">Mis Servicios</h2>
       <div class="tarjetas">
@@ -523,6 +551,8 @@
 
 </div>
 
+<hr class="separador">
+
 <section id="contacto">
         <h2 class="subtitulo">Contacto</h2>
         <form class="formulario" id="miFormulario" action="https://formspree.io/f/mzdozkve" method="POST" novalidate>
@@ -635,6 +665,12 @@
         }
     })();
 </script>
+
+<!-- Botón flotante volver arriba -->
+<button id="btnVolverArriba" class="btn-flotante-arriba" style="display: none;">
+    ↑
+</button>
+
 
     </body>
 </html>
