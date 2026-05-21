@@ -2020,3 +2020,105 @@ button.blog-boton-nuevo:hover {
     color: #ffaa33 !important;
     text-decoration: none;
 }
+
+/* Portafolio en formato grid (como el blog) */
+.portafolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+    justify-content: center;
+}
+
+.proyecto {
+    background: #0f3460;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid #fc6f03;
+}
+
+.proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(252, 111, 3, 0.2);
+}
+
+@media (max-width: 768px) {
+    .portafolio {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contador animado */
+.contador-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.contador-item {
+    background: linear-gradient(145deg, #0f3460, #0a1628);
+    padding: 30px 20px;
+    border-radius: 20px;
+    min-width: 150px;
+    border-bottom: 3px solid #fc6f03;
+    transition: transform 0.3s;
+}
+
+.contador-item:hover {
+    transform: translateY(-5px);
+}
+
+.contador-numero {
+    font-size: 48px;
+    font-weight: 800;
+    color: #fc6f03;
+    margin-bottom: 10px;
+}
+
+.contador-label {
+    font-size: 16px;
+    color: #cccccc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .contador-numero { font-size: 36px; }
+    .contador-label { font-size: 12px; }
+}
+
+/* Botón flotante volver arriba */
+.btn-flotante-arriba {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background: #fc6f03;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: all 0.3s;
+}
+
+.btn-flotante-arriba:hover {
+    background: #e05e00;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .btn-flotante-arriba {
+        bottom: 80px;
+        width: 45px;
+        height: 45px;
+        font-size: 24px;
+    }
+}
