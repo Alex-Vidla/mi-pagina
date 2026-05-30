@@ -625,14 +625,40 @@
           height: 140px;
         }
       }
+
+      /* Control del logo */
+.logo-img {
+    max-height: 50px;
+    width: auto;
+    display: block;
+}
+
+/* Ajuste del contenedor del logo dentro del header */
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
     </style>
+
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
   </head>
+  
   <body>
+    
     <!--<a href="index.html#portafolio" class="btn-volver-portafolio"
       >← Volver al Portafolio</a >-->
 
     <div class="header">
+      
+      <div class="logo">
+            <img src="maju_.png" alt="Logo" class="logo-img">
+            <span>Restaurante Majú</span>
+      </div>
+
+      
       <div class="logo"><span>🍽️</span> Restaurante <span>Majú</span></div>
       <button class="menu-hamburguesa" id="menuHamburguesa">☰</button>
       <div class="nav" id="nav">
